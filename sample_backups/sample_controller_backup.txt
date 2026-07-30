@@ -1,0 +1,2093 @@
+!RANCID-CONTENT-TYPE: f5os
+!
+#
+#
+# System Version Information:
+#
+# system version os-version 1.8.2-28311
+
+# system version service-version 1.8.2-28311
+
+# system version product F5OS-C
+
+#
+#
+# System Image Information:
+#
+#                      SERVICE      ISO      INSTALL  
+
+# NUMBER  OS VERSION   VERSION      VERSION  STATUS   
+
+# ----------------------------------------------------
+
+# 1       1.8.2-28311  1.8.2-28311  -        success  
+
+# 2       1.8.2-28311  1.8.2-28311  -        success  
+
+#
+#
+# Cluster Status Information:
+#
+# cluster cluster-status summary-status "Openshift cluster is healthy, and all controllers and blades are ready."
+
+# cluster cluster-status cluster-status 0
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 1
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 2
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 3
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 4
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 5
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 6
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 7
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 8
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 9
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 10
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 11
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 12
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 13
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 14
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 15
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 16
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 17
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 18
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 19
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 20
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 21
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 22
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+# cluster cluster-status cluster-status 23
+
+#  status " Configured DNS server on controller-1.chassis.local not responding."
+
+# cluster cluster-status cluster-status 24
+
+#  status " Found valid DNS configuration on controller-1.chassis.local."
+
+#
+# Tenant Configuration & State:
+#
+# ----------------------^
+
+# syntax error: element does not exist
+
+#
+# Hardware Components Information:
+#
+# components component blade-1
+
+#  state description "CloudScale Viprion BX110"
+
+#  state serial-no bld000000s
+
+#  state part-no "403-0086-02 REV B"
+
+#  state empty false
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#                                                               UPDATE    
+
+# NAME                       NAME  VALUE          CONFIGURABLE  STATUS    
+
+# ------------------------------------------------------------------------
+
+# fw-version-bios            -     3.00.222.1     false         none      
+
+# fw-version-bios-me         -     4.0.4.736      false         none      
+
+# fw-version-cpld            -     05.04.00       false         none      
+
+# fw-version-drive-nvme0n1   -     EDA7602Q       false         none      
+
+# fw-version-fpga-atse0      -     7.10.2.0       false         none      
+
+# fw-version-fpga-vqf0       -     8.9.5.9        false         none      
+
+# fw-version-lop-app         -     2.00.1100.0.1  false         none      
+
+# fw-version-lop-bootloader  -     1.02.868.0.1   false         none      
+
+# fw-version-sirr            -     1.1.94         false         complete  
+
+# components component blade-2
+
+#  state description "CloudScale Viprion BX110"
+
+#  state serial-no bld000000s
+
+#  state part-no "403-0086-02 REV B"
+
+#  state empty false
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#                                                               UPDATE    
+
+# NAME                       NAME  VALUE          CONFIGURABLE  STATUS    
+
+# ------------------------------------------------------------------------
+
+# fw-version-bios            -     3.00.222.1     false         none      
+
+# fw-version-bios-me         -     4.0.4.736      false         none      
+
+# fw-version-cpld            -     05.04.00       false         none      
+
+# fw-version-drive-nvme0n1   -     EDA7602Q       false         none      
+
+# fw-version-fpga-atse0      -     7.10.2.0       false         none      
+
+# fw-version-fpga-vqf0       -     8.9.5.9        false         none      
+
+# fw-version-lop-app         -     2.00.1100.0.1  false         none      
+
+# fw-version-lop-bootloader  -     1.02.868.0.1   false         none      
+
+# fw-version-sirr            -     1.1.94         false         complete  
+
+# components component blade-3
+
+#  state description "CloudScale Viprion BX110"
+
+#  state serial-no bld000000s
+
+#  state part-no "403-0086-02 REV B"
+
+#  state empty false
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#                                                               UPDATE    
+
+# NAME                       NAME  VALUE          CONFIGURABLE  STATUS    
+
+# ------------------------------------------------------------------------
+
+# fw-version-bios            -     3.00.222.1     false         none      
+
+# fw-version-bios-me         -     4.0.4.736      false         none      
+
+# fw-version-cpld            -     05.04.00       false         none      
+
+# fw-version-drive-nvme0n1   -     EDA7602Q       false         none      
+
+# fw-version-fpga-atse0      -     7.10.2.0       false         none      
+
+# fw-version-fpga-vqf0       -     8.9.5.9        false         none      
+
+# fw-version-lop-app         -     2.00.1100.0.1  false         none      
+
+# fw-version-lop-bootloader  -     1.02.868.0.1   false         none      
+
+# fw-version-sirr            -     1.1.94         false         complete  
+
+# components component blade-4
+
+#  state description "CloudScale Viprion BX110"
+
+#  state serial-no bld000000s
+
+#  state part-no "403-0086-02 REV B"
+
+#  state empty false
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#                                                               UPDATE    
+
+# NAME                       NAME  VALUE          CONFIGURABLE  STATUS    
+
+# ------------------------------------------------------------------------
+
+# fw-version-bios            -     3.00.222.1     false         none      
+
+# fw-version-bios-me         -     4.0.4.736      false         none      
+
+# fw-version-cpld            -     05.04.00       false         none      
+
+# fw-version-drive-nvme0n1   -     EDA7602Q       false         none      
+
+# fw-version-fpga-atse0      -     7.10.2.0       false         complete  
+
+# fw-version-fpga-vqf0       -     8.9.5.9        false         complete  
+
+# fw-version-lop-app         -     2.00.1100.0.1  false         none      
+
+# fw-version-lop-bootloader  -     1.02.868.0.1   false         none      
+
+# fw-version-sirr            -     1.1.94         false         none      
+
+# components component blade-5
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component blade-6
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component blade-7
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component blade-8
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component chassis
+
+#  psu state redundancy-mode no-redundancy
+
+#  psu state severity warning
+
+#  state description "CloudScale Viprion CX410"
+
+#  state serial-no chs000000s
+
+#  state part-no "403-0087-04 REV A"
+
+#  state empty false
+
+#  state nebs capable false
+
+#  state nebs disabled
+
+# components component controller-1
+
+#  state description    "CloudScale Viprion SX410"
+
+#  state serial-no      bld000000s
+
+#  state part-no        "SUB-0881-00 REV C"
+
+#  state empty          false
+
+#  state tpm-integrity-status Valid
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#  state memory total    33594560512
+
+#  state memory available 18217140224
+
+#  state memory free     657780736
+
+#  state memory used-percent 45
+
+#  state memory platform-total 33594560512
+
+#  state memory platform-used 23745257472
+
+#  state memory platform-used-percent 70
+
+#  state temperature current 23.2
+
+#  state temperature average 23.4
+
+#  state temperature minimum 23.2
+
+#  state temperature maximum 23.7
+
+#                                                                                           USED     
+
+# AREA                      CATEGORY               TOTAL         FREE          USED         PERCENT  
+
+# ---------------------------------------------------------------------------------------------------
+
+# platform/sysroot          F5OS System            353907200000  261351047168  74555039744  22       
+
+# platform/images           F5OS Images            270557773824  195119955968  61670645760  24       
+
+# partition2/config         F5OS System            10726932480   9742651392    984281088    9        
+
+# partition2/images         F5OS Partition Images  16095641600   11719356416   4376285184   27       
+
+# partition2/shared         F5OS Partition         10726932480   10691981312   34951168     0        
+
+# partition3/config         F5OS System            10726932480   10604802048   122130432    1        
+
+# partition3/images         F5OS Partition Images  16095641600   16061775872   33865728     0        
+
+# partition3/shared         F5OS Partition         10726932480   10692923392   34009088     0        
+
+# partition4/config         F5OS System            10726932480   10600853504   126078976    1        
+
+# partition4/images         F5OS Partition Images  16095641600   16061775872   33865728     0        
+
+# partition4/shared         F5OS Partition         10726932480   10692923392   34009088     0        
+
+# /var/roothome/etcd3mount  F5OS System            5150011392    4424163328    440647680    9        
+
+# DISK DATA  DISK DATA     
+
+# NAME       VALUE         
+
+# -------------------------
+
+# available  261351047168  
+
+# capacity   353907200000  
+
+# used       74555039744   
+
+#                                                                        UPDATE  
+
+# NAME                                NAME  VALUE          CONFIGURABLE  STATUS  
+
+# -------------------------------------------------------------------------------
+
+# fw-version-bios                     -     2.03.175.1     -             none    
+
+# fw-version-bios-me                  -     4.0.4.705      -             none    
+
+# fw-version-cpld                     -     01.03.0A       -             none    
+
+# fw-version-drive                    -     EDA7602Q       -             none    
+
+# fw-version-lcd-app                  -     2.02.141.00.1  -             none    
+
+# fw-version-lcd-bootloader           -     2.01.109.00.1  -             none    
+
+# fw-version-lop-app                  -     2.01.1282.0.1  -             none    
+
+# fw-version-lop-bootloader           -     1.02.1019.0.1  -             none    
+
+# fw-version-sirr                     -     1.1.80         -             none    
+
+# fw-version-vfc-app-fanCtrl1         -     2.00.1008.0.1  -             none    
+
+# fw-version-vfc-bootloader-fanCtrl1  -     1.02.798.0.1   -             none    
+
+# fw-version-vpc-app-psuCtrl1         -     2.00.875.0.1   -             none    
+
+# fw-version-vpc-app-psuCtrl2         -     2.00.875.0.1   -             none    
+
+# fw-version-vpc-bootloader-psuCtrl1  -     1.02.669.0.1   -             none    
+
+# fw-version-vpc-bootloader-psuCtrl2  -     1.02.669.0.1   -             none    
+
+#  storage state disks disk nvme0n1
+
+#   state model "SAMSUNG MZ1LB960HAJQ-00007"
+
+#   state vendor Samsung
+
+#   state version EDA7602Q
+
+#   state serial-no S435NA0N000000
+
+#   state size 683.00GB
+
+#   state type nvme
+
+#   state disk-io total-iops 0
+
+#   state disk-io read-iops 548167
+
+#   state disk-io read-merged 927824
+
+#   state disk-io read-bytes 15330605568
+
+#   state disk-io read-latency-ms 82762
+
+#   state disk-io write-iops 6173482205
+
+#   state disk-io write-merged 5519770835
+
+#   state disk-io write-bytes 58737664053760
+
+#   state disk-io write-latency-ms 177120596
+
+#  cpu state cpu-utilization thread cpu
+
+#  cpu state cpu-utilization current 53
+
+#  cpu state cpu-utilization five-second-avg 70
+
+#  cpu state cpu-utilization one-minute-avg 63
+
+#  cpu state cpu-utilization five-minute-avg 62
+
+# CPU               CORE                           THREAD                                         
+
+# INDEX  CACHESIZE  CNT   FREQ           STEPPING  CNT     MODELNAME                              
+
+# ------------------------------------------------------------------------------------------------
+
+# 1      2048(KB)   8     2200.000(MHz)  1         8       Intel(R) Atom(TM) CPU C3758 @ 2.20GHz  
+
+#                          FIVE    ONE     FIVE    
+
+# THREAD                   SECOND  MINUTE  MINUTE  
+
+# INDEX   THREAD  CURRENT  AVG     AVG     AVG     
+
+# -------------------------------------------------
+
+# 0       cpu0    48       69      62      61      
+
+# 1       cpu1    61       72      64      62      
+
+# 2       cpu2    36       68      64      62      
+
+# 3       cpu3    44       70      61      62      
+
+# 4       cpu4    70       70      64      63      
+
+# 5       cpu5    58       74      65      62      
+
+# 6       cpu6    63       74      64      63      
+
+# 7       cpu7    48       68      61      63      
+
+# components component controller-2
+
+#  state description    "CloudScale Viprion SX410"
+
+#  state serial-no      bld000000s
+
+#  state part-no        "SUB-0881-00 REV C"
+
+#  state empty          false
+
+#  state tpm-integrity-status Valid
+
+#  state nebs capable true
+
+#  state nebs disabled
+
+#  state memory total    33594560512
+
+#  state memory available 23710359552
+
+#  state memory free     684675072
+
+#  state memory used-percent 29
+
+#  state memory platform-total 33594560512
+
+#  state memory platform-used 23546703872
+
+#  state memory platform-used-percent 70
+
+#  state temperature current 24.1
+
+#  state temperature average 24.0
+
+#  state temperature minimum 23.7
+
+#  state temperature maximum 24.3
+
+#                                                                                    USED     
+
+# AREA               CATEGORY               TOTAL         FREE          USED         PERCENT  
+
+# --------------------------------------------------------------------------------------------
+
+# platform/sysroot   F5OS System            353907200000  286287650816  49618436096  14       
+
+# platform/images    F5OS Images            270557773824  196135636992  60654964736  23       
+
+# partition2/config  F5OS System            10726932480   9385402368    1341530112   12       
+
+# partition2/images  F5OS Partition Images  16095641600   11719323648   4376317952   27       
+
+# partition2/shared  F5OS Partition         10726932480   10692923392   34009088     0        
+
+# partition4/images  F5OS Partition Images  16095641600   16061775872   33865728     0        
+
+# partition4/shared  F5OS Partition         10726932480   10692923392   34009088     0        
+
+# partition3/config  F5OS System            10726932480   10599604224   127328256    1        
+
+# partition3/images  F5OS Partition Images  16095641600   16061775872   33865728     0        
+
+# partition3/shared  F5OS Partition         10726932480   10692923392   34009088     0        
+
+# partition4/config  F5OS System            10726932480   10599919616   127012864    1        
+
+# DISK DATA  DISK DATA     
+
+# NAME       VALUE         
+
+# -------------------------
+
+# available  286287650816  
+
+# capacity   353907200000  
+
+# used       49618436096   
+
+#                                                                        UPDATE    
+
+# NAME                                NAME  VALUE          CONFIGURABLE  STATUS    
+
+# ---------------------------------------------------------------------------------
+
+# fw-version-bios                     -     2.03.175.1     -             none      
+
+# fw-version-bios-me                  -     4.0.4.705      -             none      
+
+# fw-version-cpld                     -     01.03.0A       -             none      
+
+# fw-version-drive                    -     EDA7602Q       -             none      
+
+# fw-version-lcd-app                  -     2.02.141.00.1  -             none      
+
+# fw-version-lcd-bootloader           -     2.01.109.00.1  -             none      
+
+# fw-version-lop-app                  -     2.01.1282.0.1  -             none      
+
+# fw-version-lop-bootloader           -     1.02.1019.0.1  -             none      
+
+# fw-version-sirr                     -     1.1.94         -             complete  
+
+# fw-version-vfc-app-fanCtrl1         -     2.00.1008.0.1  -             none      
+
+# fw-version-vfc-bootloader-fanCtrl1  -     1.02.798.0.1   -             none      
+
+# fw-version-vpc-app-psuCtrl1         -     2.00.875.0.1   -             none      
+
+# fw-version-vpc-app-psuCtrl2         -     2.00.875.0.1   -             none      
+
+# fw-version-vpc-bootloader-psuCtrl1  -     1.02.669.0.1   -             none      
+
+# fw-version-vpc-bootloader-psuCtrl2  -     1.02.669.0.1   -             none      
+
+#  storage state disks disk nvme0n1
+
+#   state model "SAMSUNG MZ1LB960HAJQ-00007"
+
+#   state vendor Samsung
+
+#   state version EDA7602Q
+
+#   state serial-no S435NA0N000000
+
+#   state size 683.00GB
+
+#   state type nvme
+
+#   state disk-io total-iops 0
+
+#   state disk-io read-iops 377830
+
+#   state disk-io read-merged 473232
+
+#   state disk-io read-bytes 10766088704
+
+#   state disk-io read-latency-ms 55710
+
+#   state disk-io write-iops 5868886156
+
+#   state disk-io write-merged 4949113280
+
+#   state disk-io write-bytes 54439168684544
+
+#   state disk-io write-latency-ms 173995181
+
+#  cpu state cpu-utilization thread cpu
+
+#  cpu state cpu-utilization current 42
+
+#  cpu state cpu-utilization five-second-avg 41
+
+#  cpu state cpu-utilization one-minute-avg 43
+
+#  cpu state cpu-utilization five-minute-avg 45
+
+# CPU               CORE                           THREAD                                         
+
+# INDEX  CACHESIZE  CNT   FREQ           STEPPING  CNT     MODELNAME                              
+
+# ------------------------------------------------------------------------------------------------
+
+# 1      2048(KB)   8     2200.000(MHz)  1         8       Intel(R) Atom(TM) CPU C3758 @ 2.20GHz  
+
+#                          FIVE    ONE     FIVE    
+
+# THREAD                   SECOND  MINUTE  MINUTE  
+
+# INDEX   THREAD  CURRENT  AVG     AVG     AVG     
+
+# -------------------------------------------------
+
+# 0       cpu0    44       41      43      46      
+
+# 1       cpu1    30       36      43      46      
+
+# 2       cpu2    51       48      45      45      
+
+# 3       cpu3    34       42      42      43      
+
+# 4       cpu4    37       45      44      45      
+
+# 5       cpu5    54       41      42      46      
+
+# 6       cpu6    58       39      44      46      
+
+# 7       cpu7    24       40      43      43      
+
+# components component fantray-1
+
+#  state firmware-version 1.02.798.0.1
+
+#  state software-version 2.00.1008.0.1
+
+#  state serial-no  sub0000g000x
+
+#  state part-no    "SUB-0772-05 REV B"
+
+#  state empty      false
+
+#  properties fantray-state fantray-temperature 30.0
+
+#  properties fantray-state inlet-fan-1-speed 6571
+
+#  properties fantray-state inlet-fan-2-speed 6547
+
+#  properties fantray-state inlet-fan-3-speed 6517
+
+#  properties fantray-state exhaust-fan-1-speed 6501
+
+#  properties fantray-state exhaust-fan-2-speed 6478
+
+#  properties fantray-state exhaust-fan-3-speed 6535
+
+# components component lcd
+
+#  state serial-no sub0000g000x
+
+#  state part-no "SUB-0811-03 REV C"
+
+#  state empty false
+
+# components component psu-1
+
+#  state serial-no ""
+
+#  state part-no ""
+
+#  state empty false
+
+# components component psu-2
+
+#  state serial-no 20121BPJ000A
+
+#  state part-no PWR-0366-01
+
+#  state empty false
+
+#  properties psu-state psu-current-in 4.203
+
+#  properties psu-state psu-current-out 66.0
+
+#  properties psu-state psu-power-in 851.0
+
+#  properties psu-state psu-power-out 813.0
+
+#  properties psu-state psu-voltage-in 203.75
+
+#  properties psu-state psu-voltage-out 12.3059
+
+#  properties psu-state psu-temperature-1 16.2
+
+#  properties psu-state psu-temperature-2 36.7
+
+#  properties psu-state psu-temperature-3 33.0
+
+#  properties psu-state psu-fan-1-speed 7424
+
+#  properties psu-state psu-fan-2-speed 7008
+
+# components component psu-3
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component psu-4
+
+#  state serial-no "Not Available"
+
+#  state part-no "Not Available"
+
+#  state empty true
+
+# components component psu-controller-1
+
+#  state firmware-version 1.02.669.0.1
+
+#  state software-version 2.00.875.0.1
+
+#  state serial-no  sub0000g000x
+
+#  state part-no    "SUB-0759-05 REV A"
+
+#  state empty      false
+
+# components component psu-controller-2
+
+#  state firmware-version 1.02.669.0.1
+
+#  state software-version 2.00.875.0.1
+
+#  state serial-no  sub0000g000x
+
+#  state part-no    "SUB-0759-05 REV A"
+
+#  state empty      false
+
+!
+! Running Configuration:
+!
+image controller config os os 1.8.0-19782
+!
+image controller config os os 1.8.2-28311
+!
+image controller config services service 1.8.0-19782
+!
+image controller config services service 1.8.2-28311
+!
+image controller config iso iso 1.8.0-19782
+ service 1.8.0-19782
+ os      1.8.0-19782
+!
+image controller config iso iso 1.8.2-28311
+ service 1.8.2-28311
+ os      1.8.2-28311
+!
+image partition config os os 1.8.0-19782
+!
+image partition config os os 1.8.2-28311
+!
+image partition config services service 1.8.0-19782
+!
+image partition config services service 1.8.2-28311
+!
+image partition config iso iso 1.8.0-19782
+ service 1.8.0-19782
+ os      1.8.0-19782
+!
+image partition config iso iso 1.8.2-28311
+ service 1.8.2-28311
+ os      1.8.2-28311
+!
+partitions partition none
+!
+partitions partition default
+ config disabled
+ config configuration-volume 10
+ config images-volume 15
+ config shared-volume 10
+ config pxe-server    internal
+ config mgmt-ip ipv4 address 0.0.0.0
+ config mgmt-ip ipv4 prefix-length 0
+ config mgmt-ip ipv4 gateway 0.0.0.0
+ config mgmt-ip ipv6 address ::
+ config mgmt-ip ipv6 prefix-length 0
+ config mgmt-ip ipv6 gateway ::
+!
+partitions partition newPartition
+ config enabled
+ config iso-version   1.8.2-28311
+ config configuration-volume 10
+ config images-volume 15
+ config shared-volume 10
+ config pxe-server    internal
+ config mgmt-ip ipv4 address 192.0.2.60
+ config mgmt-ip ipv4 prefix-length 24
+ config mgmt-ip ipv4 gateway 192.0.2.254
+ config mgmt-ip ipv6 address ::
+ config mgmt-ip ipv6 prefix-length 0
+ config mgmt-ip ipv6 gateway ::
+!
+partitions partition partition2
+ config enabled
+ config iso-version   1.8.2-28311
+ config configuration-volume 10
+ config images-volume 15
+ config shared-volume 10
+ config pxe-server    internal
+ config mgmt-ip ipv4 address 192.0.2.61
+ config mgmt-ip ipv4 prefix-length 24
+ config mgmt-ip ipv4 gateway 192.0.2.254
+ config mgmt-ip ipv6 address ::
+ config mgmt-ip ipv6 prefix-length 0
+ config mgmt-ip ipv6 gateway ::
+!
+partitions partition partition3
+ config enabled
+ config iso-version   1.8.2-28311
+ config configuration-volume 10
+ config images-volume 15
+ config shared-volume 10
+ config pxe-server    internal
+ config mgmt-ip ipv4 address 192.0.2.62
+ config mgmt-ip ipv4 prefix-length 24
+ config mgmt-ip ipv4 gateway 192.0.2.254
+ config mgmt-ip ipv6 address ::
+ config mgmt-ip ipv6 prefix-length 0
+ config mgmt-ip ipv6 gateway ::
+!
+slots slot 1
+ enabled
+ partition newPartition
+!
+slots slot 2
+ enabled
+ partition newPartition
+!
+slots slot 3
+ enabled
+ partition partition2
+!
+slots slot 4
+ enabled
+ partition partition3
+!
+slots slot 5
+ enabled
+ partition none
+!
+slots slot 6
+ enabled
+ partition none
+!
+slots slot 7
+ enabled
+ partition none
+!
+slots slot 8
+ enabled
+ partition none
+!
+mgmt-vlans mgmt-vlan untagged
+ config mgmt-vlan-tag untagged
+ config name   mgmt-untagged
+!
+file config concurrent-operations-limit 5
+interfaces interface 1/1.1
+ config name 1/1.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.2
+ config name 1/1.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.3
+ config name 1/1.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.4
+ config name 1/1.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.5
+ config name 1/1.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.6
+ config name 1/1.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.7
+ config name 1/1.7
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/1.8
+ config name 1/1.8
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/2.2
+ config name 1/2.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/2.3
+ config name 1/2.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/2.4
+ config name 1/2.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/2.5
+ config name 1/2.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/2.6
+ config name 1/2.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.1
+ config name 1/3.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.2
+ config name 1/3.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.3
+ config name 1/3.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.4
+ config name 1/3.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.5
+ config name 1/3.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.6
+ config name 1/3.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.7
+ config name 1/3.7
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/3.8
+ config name 1/3.8
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/4.1
+ config name 1/4.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 1/mgmt0
+ config name 1/mgmt0
+ config type ethernetCsmacd
+ config enabled
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.1
+ config name 2/1.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.2
+ config name 2/1.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.3
+ config name 2/1.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.4
+ config name 2/1.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.5
+ config name 2/1.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.6
+ config name 2/1.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.7
+ config name 2/1.7
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/1.8
+ config name 2/1.8
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/2.2
+ config name 2/2.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/2.3
+ config name 2/2.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/2.4
+ config name 2/2.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/2.5
+ config name 2/2.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/2.6
+ config name 2/2.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.1
+ config name 2/3.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.2
+ config name 2/3.2
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.3
+ config name 2/3.3
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.4
+ config name 2/3.4
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.5
+ config name 2/3.5
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.6
+ config name 2/3.6
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.7
+ config name 2/3.7
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/3.8
+ config name 2/3.8
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/4.1
+ config name 2/4.1
+ config type ethernetCsmacd
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface 2/mgmt0
+ config name 2/mgmt0
+ config type ethernetCsmacd
+ config enabled
+ hold-time config up 0
+ hold-time config down 0
+!
+interfaces interface cplagg_1.1
+ config name cplagg_1.1
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.2
+ config name cplagg_1.2
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.3
+ config name cplagg_1.3
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.4
+ config name cplagg_1.4
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.5
+ config name cplagg_1.5
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.6
+ config name cplagg_1.6
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.7
+ config name cplagg_1.7
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+interfaces interface cplagg_1.8
+ config name cplagg_1.8
+ config type ieee8023adLag
+ hold-time config up 0
+ hold-time config down 0
+ aggregation config lag-type LACP
+ aggregation config min-links 1
+ aggregation config distribution-hash src-dst-ipport
+!
+lacp interfaces interface cplagg_1.1
+ config name cplagg_1.1
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.2
+ config name cplagg_1.2
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.3
+ config name cplagg_1.3
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.4
+ config name cplagg_1.4
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.5
+ config name cplagg_1.5
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.6
+ config name cplagg_1.6
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.7
+ config name cplagg_1.7
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+lacp interfaces interface cplagg_1.8
+ config name cplagg_1.8
+ config interval FAST
+ config lacp-mode ACTIVE
+!
+components component blade-1
+ config name blade-1
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive-nvme0n1
+  config name fw-version-drive-nvme0n1
+ !
+ properties property fw-version-fpga-atse0
+  config name fw-version-fpga-atse0
+ !
+ properties property fw-version-fpga-vqf0
+  config name fw-version-fpga-vqf0
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+!
+components component blade-2
+ config name blade-2
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive-nvme0n1
+  config name fw-version-drive-nvme0n1
+ !
+ properties property fw-version-fpga-atse0
+  config name fw-version-fpga-atse0
+ !
+ properties property fw-version-fpga-vqf0
+  config name fw-version-fpga-vqf0
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+!
+components component blade-3
+ config name blade-3
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive-nvme0n1
+  config name fw-version-drive-nvme0n1
+ !
+ properties property fw-version-fpga-atse0
+  config name fw-version-fpga-atse0
+ !
+ properties property fw-version-fpga-vqf0
+  config name fw-version-fpga-vqf0
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+!
+components component blade-4
+ config name blade-4
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive-nvme0n1
+  config name fw-version-drive-nvme0n1
+ !
+ properties property fw-version-fpga-atse0
+  config name fw-version-fpga-atse0
+ !
+ properties property fw-version-fpga-vqf0
+  config name fw-version-fpga-vqf0
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+!
+components component blade-5
+ config name blade-5
+!
+components component blade-6
+ config name blade-6
+!
+components component blade-7
+ config name blade-7
+!
+components component blade-8
+ config name blade-8
+!
+components component chassis
+ config name chassis
+ psu config redundancy-mode no-redundancy
+ psu config severity warning
+!
+components component controller-1
+ config name controller-1
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive
+  config name fw-version-drive
+ !
+ properties property fw-version-lcd-app
+  config name fw-version-lcd-app
+ !
+ properties property fw-version-lcd-bootloader
+  config name fw-version-lcd-bootloader
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+ properties property fw-version-vfc-app-fanCtrl1
+  config name fw-version-vfc-app-fanCtrl1
+ !
+ properties property fw-version-vfc-bootloader-fanCtrl1
+  config name fw-version-vfc-bootloader-fanCtrl1
+ !
+ properties property fw-version-vpc-app-psuCtrl1
+  config name fw-version-vpc-app-psuCtrl1
+ !
+ properties property fw-version-vpc-app-psuCtrl2
+  config name fw-version-vpc-app-psuCtrl2
+ !
+ properties property fw-version-vpc-bootloader-psuCtrl1
+  config name fw-version-vpc-bootloader-psuCtrl1
+ !
+ properties property fw-version-vpc-bootloader-psuCtrl2
+  config name fw-version-vpc-bootloader-psuCtrl2
+ !
+!
+components component controller-2
+ config name controller-2
+ properties property fw-version-bios
+  config name fw-version-bios
+ !
+ properties property fw-version-bios-me
+  config name fw-version-bios-me
+ !
+ properties property fw-version-cpld
+  config name fw-version-cpld
+ !
+ properties property fw-version-drive
+  config name fw-version-drive
+ !
+ properties property fw-version-lcd-app
+  config name fw-version-lcd-app
+ !
+ properties property fw-version-lcd-bootloader
+  config name fw-version-lcd-bootloader
+ !
+ properties property fw-version-lop-app
+  config name fw-version-lop-app
+ !
+ properties property fw-version-lop-bootloader
+  config name fw-version-lop-bootloader
+ !
+ properties property fw-version-sirr
+  config name fw-version-sirr
+ !
+ properties property fw-version-vfc-app-fanCtrl1
+  config name fw-version-vfc-app-fanCtrl1
+ !
+ properties property fw-version-vfc-bootloader-fanCtrl1
+  config name fw-version-vfc-bootloader-fanCtrl1
+ !
+ properties property fw-version-vpc-app-psuCtrl1
+  config name fw-version-vpc-app-psuCtrl1
+ !
+ properties property fw-version-vpc-app-psuCtrl2
+  config name fw-version-vpc-app-psuCtrl2
+ !
+ properties property fw-version-vpc-bootloader-psuCtrl1
+  config name fw-version-vpc-bootloader-psuCtrl1
+ !
+ properties property fw-version-vpc-bootloader-psuCtrl2
+  config name fw-version-vpc-bootloader-psuCtrl2
+ !
+!
+components component fantray-1
+ config name fantray-1
+!
+components component lcd
+ config name lcd
+!
+components component psu-1
+ config name psu-1
+!
+components component psu-2
+ config name psu-2
+!
+components component psu-3
+ config name psu-3
+!
+components component psu-4
+ config name psu-4
+!
+components component psu-controller-1
+ config name psu-controller-1
+!
+components component psu-controller-2
+ config name psu-controller-2
+!
+system dbvars config debug chassis-manager all false
+system dbvars config debug chassis-manager confd-subscribe false
+system dbvars config debug chassis-manager confd-connect false
+system dbvars config debug chassis-manager process-config false
+system dbvars config debug chassis-manager process-op-data false
+system dbvars config debug chassis-manager callpoint false
+system dbvars config debug partition-software-manager all false
+system dbvars config debug partition-software-manager confd-subscribe false
+system dbvars config debug partition-software-manager confd-connect false
+system dbvars config debug partition-software-manager process-config false
+system dbvars config debug partition-software-manager process-op-data false
+system dbvars config debug partition-software-manager callpoint false
+system dbvars config debug partition-software-manager misc false
+system dbvars config debug switchd all false
+system dbvars config debug switchd confd-subscribe false
+system dbvars config debug switchd confd-connect false
+system dbvars config debug switchd process-config false
+system dbvars config debug switchd process-op-data false
+system dbvars config debug switchd callpoint false
+system dbvars config debug terminal-server all false
+system dbvars config debug terminal-server confd-subscribe false
+system dbvars config debug terminal-server confd-connect false
+system dbvars config debug terminal-server process-config false
+system dbvars config debug terminal-server process-op-data false
+system dbvars config debug terminal-server callpoint false
+system dbvars config debug ha all false
+system dbvars config debug ha confd-subscribe false
+system dbvars config debug ha confd-connect false
+system dbvars config debug ha process-config false
+system dbvars config debug ha process-op-data false
+system dbvars config debug ha callpoint false
+system dbvars config debug mgmt-ip-test all false
+system dbvars config debug mgmt-ip-test confd-subscribe false
+system dbvars config debug mgmt-ip-test confd-connect false
+system dbvars config debug mgmt-ip-test process-config false
+system dbvars config debug mgmt-ip-test process-op-data false
+system dbvars config debug mgmt-ip-test callpoint false
+system dbvars config debug system all false
+system dbvars config debug system confd-subscribe false
+system dbvars config debug system confd-connect false
+system dbvars config debug system process-config false
+system dbvars config debug system process-op-data false
+system dbvars config debug system callpoint false
+system dbvars config debug partition-agent all false
+system dbvars config debug partition-agent confd-subscribe false
+system dbvars config debug partition-agent confd-connect false
+system dbvars config debug partition-agent process-config false
+system dbvars config debug partition-agent process-op-data false
+system dbvars config debug partition-agent callpoint false
+system dbvars config debug confd all false
+system dbvars config debug confd confd-subscribe false
+system dbvars config debug confd confd-connect false
+system dbvars config debug confd process-config false
+system dbvars config debug confd process-op-data false
+system dbvars config debug confd callpoint false
+system dbvars config debug confd ha-state-machine false
+system dbvars config debug confd ha-health false
+system dbvars config debug confd ha-hal false
+system dbvars config debug confd supervisor-loop false
+system dbvars config debug confd hook false
+system network config network-range-type RFC6598
+system network config chassis-id 1
+system database config reset-default-config false
+system database config services-type "F5OS-C CX410"
+system database config services-version 1.8.2-28311
+system database config schema-fingerprint 85d2f3547c91da42f8e08759e4815ac9
+system appliance-mode config disabled
+system locator config disabled
+system settings gui advisory config disabled
+system clock config timezone-name Etc/UTC
+system dns servers server 10.154.1.241
+ config port 53
+!
+system ntp config enabled
+system ntp config enable-ntp-auth false
+system ntp servers server pool.ntp.org
+ config port      123
+ config version   4
+ config association-type POOL
+ config iburst    true
+ config prefer    false
+!
+system logging config include-hostname true
+system logging sw-components sw-component alert-service
+ config name alert-service
+ config description "Alert service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component audit-service
+ config name audit-service
+ config description "Audit message handling service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component authd
+ config name authd
+ config description "Authentication configuration"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component chassis-bladesd
+ config name chassis-bladesd
+ config description "Unassigned Blade Enumerator"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component confd-key-migrationd
+ config name confd-key-migrationd
+ config description "Confd Primary Key Migration Service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component config-object-manager
+ config name config-object-manager
+ config description "Configuration object manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component diag-agent
+ config name diag-agent
+ config description "Diag agent"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component diag-data
+ config name diag-data
+ config description "Static diagnostic data collector"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component fips-service
+ config name fips-service
+ config description "FIPS service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component firewall-manager
+ config name firewall-manager
+ config description "Firewall Manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component ihealth-upload-service
+ config name ihealth-upload-service
+ config description "Upload diagnostics data service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component ihealthd
+ config name ihealthd
+ config description "Communication proxy for ihealth-upload-service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component license-service
+ config name license-service
+ config description "License service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component lopd
+ config name lopd
+ config description "Communication proxy for the Lights Out Processor"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component orchestration-manager
+ config name orchestration-manager
+ config description "Orchestration manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component partition-software-manager
+ config name partition-software-manager
+ config description "Partition software manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-diag
+ config name platform-diag
+ config description "Platform diag service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-fwu
+ config name platform-fwu
+ config description "Platform firmware upgrade"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-hal
+ config name platform-hal
+ config description "Platform hardware abstraction layer"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-monitor
+ config name platform-monitor
+ config description "Platform monitor"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-stats
+ config name platform-stats
+ config description "Collects platform statistics like cpu and memory utilization"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component platform-stats-bridge-cc
+ config name platform-stats-bridge-cc
+ config description "Platform stats bridge"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component qkviewd
+ config name qkviewd
+ config description "Diagnostic information"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component rsyslog-configd
+ config name rsyslog-configd
+ config description "Logging configuration"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component snmp-service
+ config name snmp-service
+ config description "SNMP service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component snmp-trapd
+ config name snmp-trapd
+ config description "SNMP trap"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component sshd-crypto
+ config name sshd-crypto
+ config description "Enable Information logging for sshd-crypto"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component switchd
+ config name switchd
+ config description "Switch daemon"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component system-service
+ config name system-service
+ config description "System Configuration service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component terminal-server
+ config name terminal-server
+ config description "Terminal server"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component upgrade-service
+ config name upgrade-service
+ config description "Software upgrade service"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component user-manager
+ config name user-manager
+ config description "User manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-chassis-manager
+ config name vcc-chassis-manager
+ config description "Chassis manager"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-confd
+ config name vcc-confd
+ config description "System controller ConfD"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-ha
+ config name vcc-ha
+ config description "High availability"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-host-config
+ config name vcc-host-config
+ config description "Host configuration"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-image-server
+ config name vcc-image-server
+ config description "Image server"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-lacpd
+ config name vcc-lacpd
+ config description "Link aggregation control protocol"
+ config severity INFORMATIONAL
+!
+system logging sw-components sw-component vcc-partition-agent
+ config name vcc-partition-agent
+ config description "Partition agent"
+ config severity INFORMATIONAL
+!
+system logging host-logs
+ config remote-forwarding disabled
+!
+system aaa restconf-token config lifetime 15
+system aaa login-policy config admin-role-limit false
+system aaa login-policy config restconf-max-session-limit 0
+system aaa login-policy config ssh-max-session-limit 0
+system aaa password-policy config min-length 6
+system aaa password-policy config required-numeric 0
+system aaa password-policy config required-uppercase 0
+system aaa password-policy config required-lowercase 0
+system aaa password-policy config required-special 0
+system aaa password-policy config max-letter-repeat 3
+system aaa password-policy config max-sequence-repeat 0
+system aaa password-policy config max-class-repeat 0
+system aaa password-policy config required-differences 0
+system aaa password-policy config reject-username false
+system aaa password-policy config apply-to-root false
+system aaa password-policy config retries 3
+system aaa password-policy config max-login-failures 10
+system aaa password-policy config unlock-time 60
+system aaa password-policy config root-lockout true
+system aaa password-policy config root-unlock-time 60
+system aaa password-policy config max-age 0
+system aaa password-policy config remember 0
+system aaa password-policy config warn-age 0
+system aaa password-policy config min-days 0
+system aaa authentication config authentication-method [ LOCAL LDAP_ALL ]
+system aaa authentication config basic enabled
+system aaa authentication config cert-auth disabled
+system aaa authentication config superuser-bash-access false
+system aaa authentication ldap bind_timelimit 10
+system aaa authentication ldap timelimit 0
+system aaa authentication ldap idle_timelimit 0
+system aaa authentication ldap ldap_version 3
+system aaa authentication ldap ssl off
+system aaa authentication ldap active_directory false
+system aaa authentication ldap unix_attributes true
+system aaa authentication ldap tls_reqcert demand
+system aaa authentication ldap chase-referrals true
+system aaa authentication ldap ignore-case false
+system aaa authentication ocsp config override-responder off
+system aaa authentication ocsp config response-max-age -1
+system aaa authentication ocsp config response-time-skew 300
+system aaa authentication ocsp config nonce-request on
+system aaa authentication ocsp config disabled
+system aaa authentication radius require_message_authenticator false
+system aaa authentication users user admin
+ config username admin
+ config last-change 20350
+ config tally-count 0
+ config role   admin
+ config expiry-status enabled
+!
+system aaa authentication users user root
+ config username root
+ config last-change 20350
+ config tally-count 0
+ config role   root
+ config expiry-status enabled
+!
+system aaa authentication roles role admin
+ config rolename admin
+ config gid  9000
+ config remote-gid 9000
+ config description "Unrestricted read/write access."
+!
+system aaa authentication roles role operator
+ config rolename operator
+ config gid  9001
+ config ldap-group dc=my-domain,dc=com
+ config description "Read-only access to system level data."
+!
+system aaa authentication roles role partition_1
+ config rolename partition_1
+ config gid  9101
+ config description "Provides console access for partition-1."
+!
+system aaa authentication roles role partition_2
+ config rolename partition_2
+ config gid  9102
+ config description "Provides console access for partition-2."
+!
+system aaa authentication roles role partition_3
+ config rolename partition_3
+ config gid  9103
+ config description "Provides console access for partition-3."
+!
+system aaa authentication roles role partition_4
+ config rolename partition_4
+ config gid  9104
+ config description "Provides console access for partition-4."
+!
+system aaa authentication roles role partition_5
+ config rolename partition_5
+ config gid  9105
+ config description "Provides console access for partition-5."
+!
+system aaa authentication roles role partition_6
+ config rolename partition_6
+ config gid  9106
+ config description "Provides console access for partition-6."
+!
+system aaa authentication roles role partition_7
+ config rolename partition_7
+ config gid  9107
+ config description "Provides console access for partition-7."
+!
+system aaa authentication roles role partition_8
+ config rolename partition_8
+ config gid  9108
+ config description "Provides console access for partition-8."
+!
+system aaa authentication roles role resource-admin
+ config rolename resource-admin
+ config gid  9003
+ config description "Restricted read/write access. No access to modify authentication configuration."
+!
+system aaa authentication roles role superuser
+ config rolename superuser
+ config gid  9004
+ config description "Sudo privileges and Bash access to the system (if enabled)."
+!
+system aaa authentication roles role ts_admin
+ config rolename ts_admin
+ config gid  9100
+ config description "Provides admin access to the terminal server (TS)."
+!
+system aaa authentication roles role user
+ config rolename user
+ config gid  9002
+ config description "Read-only access to non-sensitive system level data."
+!
+system aaa server-groups server-group mygroup1
+ config name mygroup1
+ config type TACACS
+!
+system aaa server-groups server-group test_ldap
+ config name test_ldap
+ config type LDAP
+ servers server 172.18.104.139
+  config address 172.18.104.139
+  ldap config auth-port 1389
+  ldap config type ldap
+ !
+!
+system aaa tls config verify-client false
+system aaa tls config verify-client-depth 1
+system redundancy config mode auto
+system redundancy nodes node controller-1
+ config name controller-1
+!
+system redundancy nodes node controller-2
+ config name controller-2
+!
+system allowed-ips allowed-ip allow-snmp
+ config ipv4 address 10.0.0.221
+ config ipv4 prefix-length 32
+ config ipv4 port 161
+!
+system allowed-ips allowed-ip allow-snmp2
+ config ipv4 address 172.18.0.0
+ config ipv4 prefix-length 16
+ config ipv4 port 161
+!
+system mgmt-ip config dhcp-enabled false
+system mgmt-ip config ipv4 controller-1 address 192.0.2.35
+system mgmt-ip config ipv4 controller-2 address 192.0.2.37
+system mgmt-ip config ipv4 floating address 192.0.2.36
+system mgmt-ip config ipv4 prefix-length 24
+system mgmt-ip config ipv4 gateway 192.0.2.254
+system mgmt-ip config ipv6 controller-1 address ::
+system mgmt-ip config ipv6 controller-2 address ::
+system mgmt-ip config ipv6 floating address ::
+system mgmt-ip config ipv6 prefix-length 0
+system mgmt-ip config ipv6 gateway ::
+system diagnostics telemetry config enable true
+system diagnostics ihealth config server https://ihealth-api.f5.com/qkview-analyzer/api/qkviews?visible_in_gui=True
+system diagnostics ihealth config authserver https://identity.account.f5.com/oauth2/ausp95ykc80HOU7SQ357/v1/token
+system security firewall config logging disabled
+system security config deny-root-ssh disabled
+system security services service httpd
+ config ssl-ciphersuite ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-DSS-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA256:DHE-RSA-AES256-SHA:DHE-DSS-AES256-SHA:DHE-RSA-CAMELLIA256-SHA:DHE-DSS-CAMELLIA256-SHA:ECDH-RSA-AES256-GCM-SHA384:ECDH-ECDSA-AES256-GCM-SHA384:ECDH-RSA-AES256-SHA384:ECDH-ECDSA-AES256-SHA384:ECDH-RSA-AES256-SHA:ECDH-ECDSA-AES256-SHA:AES256-GCM-SHA384:AES256-SHA256:AES256-SHA:CAMELLIA256-SHA:PSK-AES256-CBC-SHA:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:DHE-DSS-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-SHA256:DHE-DSS-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA:DHE-RSA-CAMELLIA128-SHA:DHE-DSS-CAMELLIA128-SHA:ECDH-RSA-AES128-GCM-SHA256:ECDH-ECDSA-AES128-GCM-SHA256:ECDH-RSA-AES128-SHA256:ECDH-ECDSA-AES128-SHA256:ECDH-RSA-AES128-SHA:ECDH-ECDSA-AES128-SHA:AES128-GCM-SHA256:AES128-SHA256:AES128-SHA:CAMELLIA128-SHA:PSK-AES128-CBC-SHA
+!
+system security services service sshd
+ config ciphers [ aes128-cbc aes128-ctr aes128-gcm@openssh.com aes256-cbc aes256-ctr aes256-gcm@openssh.com ]
+ config macs   [ hmac-md5 hmac-md5-96 hmac-md5-96-etm@openssh.com hmac-md5-etm@openssh.com hmac-ripemd160 hmac-ripemd160-etm@openssh.com hmac-ripemd160@openssh.com hmac-sha1 hmac-sha1-96 hmac-sha1-96-etm@openssh.com hmac-sha1-etm@openssh.com hmac-sha2-256 hmac-sha2-256-etm@openssh.com hmac-sha2-512 hmac-sha2-512-etm@openssh.com umac-128-etm@openssh.com umac-128@openssh.com umac-64-etm@openssh.com umac-64@openssh.com ]
+ config kexalgorithms [ diffie-hellman-group14-sha1 diffie-hellman-group14-sha256 diffie-hellman-group16-sha512 ecdh-sha2-nistp256 ecdh-sha2-nistp384 ecdh-sha2-nistp521 ]
+!
+system snmp engine-id config value mac
+system snmp config port 161
+system snmp users user ganti
+ config authentication-protocol md5
+ config privacy-protocol none
+!
+system licensing feature-flags feature-flag perf_SSL_total_TPS
+!
+system licensing feature-flags feature-flag perf_http_compression_hw
+!
+system licensing feature-flags feature-flag perf_vcmp_max_guests
+!
+SNMPv2-MIB system sysContact ""
+SNMPv2-MIB system sysName localhost.localdomain
+SNMPv2-MIB system sysLocation ""
+SNMPv2-MIB snmp snmpEnableAuthenTraps disabled

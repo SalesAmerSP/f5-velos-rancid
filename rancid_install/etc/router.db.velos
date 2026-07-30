@@ -1,0 +1,19 @@
+# RANCID Device List (router.db) for F5 VELOS System
+# Format: hostname;type;status[;comment]
+#
+# Device Types:
+# - f5os: Custom RANCID module for F5OS-C (VELOS controllers & chassis partitions)
+# - bigip: Standard RANCID module for BIG-IP (TMOS tenants)
+
+# --- F5OS System Controllers ---
+192.0.2.36;f5os;up;velos-chassis-1-sys-controller-floating-ip
+192.0.2.35;f5os;up;velos-chassis-1-sys-controller-1
+192.0.2.37;f5os;up;velos-chassis-1-sys-controller-2
+
+# --- F5OS Chassis Partitions ---
+# (Replace with your actual configured chassis partition IP address)
+192.0.2.38;f5os;up;velos-chassis-1-partition-1
+
+# --- BIG-IP Tenants ---
+# (Replace with your actual configured BIG-IP tenant management IP address)
+192.0.2.39;bigip;up;velos-chassis-1-tenant-1

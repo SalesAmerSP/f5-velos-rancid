@@ -10,9 +10,9 @@
 # maintainer repo it ensures the right people are pinged on PRs.
 
 # Default owner for everything in the repo
-# *  @<TEMPLATE-OWNER>
+*  @grobf5
 
 # Security-sensitive files require maintainer review
-# /SECURITY.md             @<TEMPLATE-OWNER>
-# /.github/workflows/      @<TEMPLATE-OWNER>
-# /.github/dependabot.yml  @<TEMPLATE-OWNER>
+/SECURITY.md             @grobf5
+/.github/workflows/      @grobf5
+/.github/dependabot.yml  @grobf5

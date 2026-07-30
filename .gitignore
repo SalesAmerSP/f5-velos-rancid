@@ -192,3 +192,34 @@ coverage/
 # *.csv
 # *.xlsx
 # *.sqlite
+
+# =======================================================
+# F5 VELOS RANCID Custom Integration & Backup Rules
+# =======================================================
+
+# Ignore the compiled RANCID source folder and tar archive
+rancid-3.14/
+rancid-3.14.tar.gz
+
+# Ignore local python virtual environment
+venv/
+
+# Ignore compiled binary executables and temporary/state directories
+rancid_install/bin/
+rancid_install/var/
+rancid_install/share/
+rancid_install/lib/rancid/*
+
+# Exclude our custom Perl module from being ignored!
+!rancid_install/lib/rancid/f5os.pm
+
+# Track specific custom templates and definitions under etc/
+rancid_install/etc/*
+!rancid_install/etc/rancid.types.conf
+!rancid_install/etc/cloginrc.velos
+!rancid_install/etc/router.db.velos
+
+# Ignore standard files
+rancid_install/etc/lg.conf
+rancid_install/etc/rancid.conf
+rancid_install/etc/rancid.types.base

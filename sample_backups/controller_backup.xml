@@ -1,0 +1,1829 @@
+<?schema-metadata
+services-type: F5OS-C CX410
+services-version: 1.8.2-28311
+schema-fingerprint: 85d2f3547c91da42f8e08759e4815ac9
+fingerprint-check: fuzzedfingerprintcheckfuzzedfingerprintcheckfuzzedfingerprintcheck
+primary-key-hash: fuzzedprimarykeyhashfuzzedprimarykeyhashfuzzedprimarykeyhashfuzzed
+?>
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <SNMP-NOTIFICATION-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-NOTIFICATION-MIB/200210140000Z">
+    <snmpNotifyTable>
+      <snmpNotifyEntry>
+        <snmpNotifyName>std-trap</snmpNotifyName>
+        <snmpNotifyTag>std-trap</snmpNotifyTag>
+        <snmpNotifyType>trap</snmpNotifyType>
+      </snmpNotifyEntry>
+    </snmpNotifyTable>
+  </SNMP-NOTIFICATION-MIB>
+  <SNMP-USER-BASED-SM-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-USER-BASED-SM-MIB/200210160000Z">
+    <usmUserTable>
+      <usmUserEntry>
+        <usmUserEngineID>00:11:22:33:44:55:94:a1:8f:a4:00</usmUserEngineID>
+        <usmUserName>ganti</usmUserName>
+        <usmUserSecurityName>ganti</usmUserSecurityName>
+        <usmUserAuthProtocol>1.3.6.1.6.3.10.1.1.2</usmUserAuthProtocol>
+        <usmUserPrivProtocol>1.3.6.1.6.3.10.1.2.1</usmUserPrivProtocol>
+        <usmUserAuthKey>00:11:22:33:44:55:00:11:22:33:44:55:cc:dd:ee:ff</usmUserAuthKey>
+      </usmUserEntry>
+    </usmUserTable>
+  </SNMP-USER-BASED-SM-MIB>
+  <SNMP-VIEW-BASED-ACM-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-VIEW-BASED-ACM-MIB/200210160000Z">
+    <vacmSecurityToGroupTable>
+      <vacmSecurityToGroupEntry>
+        <vacmSecurityModel>3</vacmSecurityModel>
+        <vacmSecurityName>ganti</vacmSecurityName>
+        <vacmGroupName>authNoPriv</vacmGroupName>
+      </vacmSecurityToGroupEntry>
+    </vacmSecurityToGroupTable>
+    <vacmAccessTable>
+      <vacmAccessEntry>
+        <vacmGroupName>authPriv</vacmGroupName>
+        <vacmAccessContextPrefix></vacmAccessContextPrefix>
+        <vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+        <vacmAccessSecurityLevel>authPriv</vacmAccessSecurityLevel>
+        <vacmAccessContextMatch>exact</vacmAccessContextMatch>
+        <vacmAccessReadViewName>internet</vacmAccessReadViewName>
+        <vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+      </vacmAccessEntry>
+      <vacmAccessEntry>
+        <vacmGroupName>authNoPriv</vacmGroupName>
+        <vacmAccessContextPrefix></vacmAccessContextPrefix>
+        <vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+        <vacmAccessSecurityLevel>authNoPriv</vacmAccessSecurityLevel>
+        <vacmAccessContextMatch>exact</vacmAccessContextMatch>
+        <vacmAccessReadViewName>internet</vacmAccessReadViewName>
+        <vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+      </vacmAccessEntry>
+      <vacmAccessEntry>
+        <vacmGroupName>read-access</vacmGroupName>
+        <vacmAccessContextPrefix></vacmAccessContextPrefix>
+        <vacmAccessSecurityModel>0</vacmAccessSecurityModel>
+        <vacmAccessSecurityLevel>noAuthNoPriv</vacmAccessSecurityLevel>
+        <vacmAccessContextMatch>exact</vacmAccessContextMatch>
+        <vacmAccessReadViewName>internet</vacmAccessReadViewName>
+        <vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+      </vacmAccessEntry>
+      <vacmAccessEntry>
+        <vacmGroupName>noAuthNoPriv</vacmGroupName>
+        <vacmAccessContextPrefix></vacmAccessContextPrefix>
+        <vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+        <vacmAccessSecurityLevel>noAuthNoPriv</vacmAccessSecurityLevel>
+        <vacmAccessContextMatch>exact</vacmAccessContextMatch>
+        <vacmAccessReadViewName>internet</vacmAccessReadViewName>
+        <vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+      </vacmAccessEntry>
+    </vacmAccessTable>
+    <vacmViewTreeFamilyTable>
+      <vacmViewTreeFamilyEntry>
+        <vacmViewTreeFamilyViewName>internet</vacmViewTreeFamilyViewName>
+        <vacmViewTreeFamilySubtree>1.3.6.1</vacmViewTreeFamilySubtree>
+        <vacmViewTreeFamilyMask></vacmViewTreeFamilyMask>
+        <vacmViewTreeFamilyType>included</vacmViewTreeFamilyType>
+      </vacmViewTreeFamilyEntry>
+    </vacmViewTreeFamilyTable>
+  </SNMP-VIEW-BASED-ACM-MIB>
+  <SNMPv2-MIB xmlns="http://tail-f.com/ns/mibs/SNMPv2-MIB/200210160000Z">
+    <system>
+      <sysContact></sysContact>
+      <sysName>localhost.localdomain</sysName>
+      <sysLocation></sysLocation>
+    </system>
+  </SNMPv2-MIB>
+  <mgmt-vlans xmlns="http://f5.com/yang/mgmt-vlan">
+    <mgmt-vlan>
+      <mgmt-vlan-tag>untagged</mgmt-vlan-tag>
+      <config>
+        <mgmt-vlan-tag>untagged</mgmt-vlan-tag>
+        <name>mgmt-untagged</name>
+      </config>
+    </mgmt-vlan>
+  </mgmt-vlans>
+  <foo xmlns="http://f5.com/ns/f5-system-foo">
+    <foo-value>1</foo-value>
+  </foo>
+  <image xmlns="http://f5.com/ns/f5-system-image">
+    <controller>
+      <config>
+        <os>
+          <os>
+            <version>1.8.0-19782</version>
+          </os>
+          <os>
+            <version>1.8.2-28311</version>
+          </os>
+        </os>
+        <services>
+          <service>
+            <version>1.8.0-19782</version>
+          </service>
+          <service>
+            <version>1.8.2-28311</version>
+          </service>
+        </services>
+        <iso>
+          <iso>
+            <version>1.8.0-19782</version>
+            <service>1.8.0-19782</service>
+            <os>1.8.0-19782</os>
+          </iso>
+          <iso>
+            <version>1.8.2-28311</version>
+            <service>1.8.2-28311</service>
+            <os>1.8.2-28311</os>
+          </iso>
+        </iso>
+      </config>
+    </controller>
+    <partition>
+      <config>
+        <os>
+          <os>
+            <version>1.8.0-19782</version>
+          </os>
+          <os>
+            <version>1.8.2-28311</version>
+          </os>
+        </os>
+        <services>
+          <service>
+            <version>1.8.0-19782</version>
+          </service>
+          <service>
+            <version>1.8.2-28311</version>
+          </service>
+        </services>
+        <iso>
+          <iso>
+            <version>1.8.0-19782</version>
+            <service>1.8.0-19782</service>
+            <os>1.8.0-19782</os>
+          </iso>
+          <iso>
+            <version>1.8.2-28311</version>
+            <service>1.8.2-28311</service>
+            <os>1.8.2-28311</os>
+          </iso>
+        </iso>
+      </config>
+    </partition>
+  </image>
+  <partitions xmlns="http://f5.com/ns/f5-system-partition">
+    <partition>
+      <name>default</name>
+      <id>1</id>
+      <uuid>eac1f6a2-9544-46b7-8997-0f9316b8e98c</uuid>
+      <config>
+        <enabled>false</enabled>
+        <configuration-volume>10</configuration-volume>
+        <images-volume>15</images-volume>
+        <shared-volume>10</shared-volume>
+        <master-keys>
+          <keys>$8$fuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkey==</keys>
+          <hash>NBpdiIvziAvWbV4Hey3RZVTrTu7pX1Gw9vc/2jBfC4Wl0dE8LJQEB/Bm/FOFJvcwPy4PtlbDxyoZD9c4rwVRzg==</hash>
+        </master-keys>
+        <mgmt-ip>
+          <ipv4>
+            <address>0.0.0.0</address>
+            <prefix-length>0</prefix-length>
+            <gateway>0.0.0.0</gateway>
+          </ipv4>
+          <ipv6>
+            <address>::</address>
+            <prefix-length>0</prefix-length>
+            <gateway>::</gateway>
+          </ipv6>
+        </mgmt-ip>
+      </config>
+    </partition>
+    <partition>
+      <name>newPartition</name>
+      <id>2</id>
+      <uuid>1ae9135b-d52c-4ae7-89e0-330059478777</uuid>
+      <config>
+        <enabled>true</enabled>
+        <started>true</started>
+        <iso-version>1.8.2-28311</iso-version>
+        <install-iso-version>1.8.2-28311</install-iso-version>
+        <install-status>success</install-status>
+        <configuration-volume>10</configuration-volume>
+        <images-volume>15</images-volume>
+        <shared-volume>10</shared-volume>
+        <master-keys>
+          <keys>$8$fuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkey==</keys>
+          <hash>OgEpLhDMY9xhAV7As3ygRKN/mygStHQIQBU9jbpFrTRn76DhK8oZSvfPRK2EFA88M5fBxAStpftN++IyIQKkyA==</hash>
+        </master-keys>
+        <mgmt-ip>
+          <ipv4>
+            <address>192.0.2.60</address>
+            <prefix-length>24</prefix-length>
+            <gateway>192.0.2.254</gateway>
+          </ipv4>
+          <ipv6>
+            <address>::</address>
+            <prefix-length>0</prefix-length>
+            <gateway>::</gateway>
+          </ipv6>
+          <controller-1>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-1>
+          <controller-2>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-2>
+        </mgmt-ip>
+      </config>
+    </partition>
+    <partition>
+      <name>none</name>
+      <id>0</id>
+      <uuid>00000000-0000-0000-0000-000000000000</uuid>
+      <config>
+        <enabled>false</enabled>
+      </config>
+    </partition>
+    <partition>
+      <name>partition2</name>
+      <id>3</id>
+      <uuid>402ff899-c84d-475e-8df8-8a7269bbe9a1</uuid>
+      <config>
+        <enabled>true</enabled>
+        <started>true</started>
+        <iso-version>1.8.2-28311</iso-version>
+        <configuration-volume>10</configuration-volume>
+        <images-volume>15</images-volume>
+        <shared-volume>10</shared-volume>
+        <master-keys>
+          <keys>$8$fuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkey==</keys>
+          <hash>zb2WX677XyHC6iR0fCEMR3EUT3jQmO8/K8/ATxIWMPRZDXwcgok5oOKWNIHvzBKxkE0PxJ8mZc08UysCF8j24A==</hash>
+        </master-keys>
+        <mgmt-ip>
+          <ipv4>
+            <address>192.0.2.61</address>
+            <prefix-length>24</prefix-length>
+            <gateway>192.0.2.254</gateway>
+          </ipv4>
+          <ipv6>
+            <address>::</address>
+            <prefix-length>0</prefix-length>
+            <gateway>::</gateway>
+          </ipv6>
+          <controller-1>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-1>
+          <controller-2>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-2>
+        </mgmt-ip>
+      </config>
+    </partition>
+    <partition>
+      <name>partition3</name>
+      <id>4</id>
+      <uuid>ce4e6782-b514-4d53-8323-4b5596211974</uuid>
+      <config>
+        <enabled>true</enabled>
+        <started>true</started>
+        <iso-version>1.8.2-28311</iso-version>
+        <install-iso-version>1.8.2-28311</install-iso-version>
+        <install-status>success</install-status>
+        <configuration-volume>10</configuration-volume>
+        <images-volume>15</images-volume>
+        <shared-volume>10</shared-volume>
+        <master-keys>
+          <keys>$8$fuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkey==</keys>
+          <hash>NfYo0JeOK5OuK0LYiRXmyNEycxB2w+ysiZjtByVF9TVd8gTr3K8NlJA+UB5VIIMhy5P+nJY7j6wfjpd0yQIp7A==</hash>
+        </master-keys>
+        <mgmt-ip>
+          <ipv4>
+            <address>192.0.2.62</address>
+            <prefix-length>24</prefix-length>
+            <gateway>192.0.2.254</gateway>
+          </ipv4>
+          <ipv6>
+            <address>::</address>
+            <prefix-length>0</prefix-length>
+            <gateway>::</gateway>
+          </ipv6>
+          <controller-1>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-1>
+          <controller-2>
+            <cfg-mgmt-vlan>untagged</cfg-mgmt-vlan>
+          </controller-2>
+        </mgmt-ip>
+      </config>
+    </partition>
+  </partitions>
+  <slots xmlns="http://f5.com/ns/f5-system-slot">
+    <slot>
+      <slot-num>1</slot-num>
+      <enabled>true</enabled>
+      <partition>newPartition</partition>
+    </slot>
+    <slot>
+      <slot-num>2</slot-num>
+      <enabled>true</enabled>
+      <partition>newPartition</partition>
+    </slot>
+    <slot>
+      <slot-num>3</slot-num>
+      <enabled>true</enabled>
+      <partition>partition2</partition>
+    </slot>
+    <slot>
+      <slot-num>4</slot-num>
+      <enabled>true</enabled>
+      <partition>partition3</partition>
+    </slot>
+    <slot>
+      <slot-num>5</slot-num>
+      <enabled>true</enabled>
+      <partition>none</partition>
+    </slot>
+    <slot>
+      <slot-num>6</slot-num>
+      <enabled>true</enabled>
+      <partition>none</partition>
+    </slot>
+    <slot>
+      <slot-num>7</slot-num>
+      <enabled>true</enabled>
+      <partition>none</partition>
+    </slot>
+    <slot>
+      <slot-num>8</slot-num>
+      <enabled>true</enabled>
+      <partition>none</partition>
+    </slot>
+  </slots>
+  <interfaces xmlns="http://openconfig.net/yang/interfaces">
+    <interface>
+      <name>1/1.1</name>
+      <config>
+        <name>1/1.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.1</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.2</name>
+      <config>
+        <name>1/1.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.2</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.3</name>
+      <config>
+        <name>1/1.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.3</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.4</name>
+      <config>
+        <name>1/1.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.4</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.5</name>
+      <config>
+        <name>1/1.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.5</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.6</name>
+      <config>
+        <name>1/1.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.6</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.7</name>
+      <config>
+        <name>1/1.7</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.7</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/1.8</name>
+      <config>
+        <name>1/1.8</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.8</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/2.2</name>
+      <config>
+        <name>1/2.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/2.3</name>
+      <config>
+        <name>1/2.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/2.4</name>
+      <config>
+        <name>1/2.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/2.5</name>
+      <config>
+        <name>1/2.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/2.6</name>
+      <config>
+        <name>1/2.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.1</name>
+      <config>
+        <name>1/3.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.2</name>
+      <config>
+        <name>1/3.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.3</name>
+      <config>
+        <name>1/3.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.4</name>
+      <config>
+        <name>1/3.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.5</name>
+      <config>
+        <name>1/3.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.6</name>
+      <config>
+        <name>1/3.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.7</name>
+      <config>
+        <name>1/3.7</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/3.8</name>
+      <config>
+        <name>1/3.8</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/4.1</name>
+      <config>
+        <name>1/4.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>1/mgmt0</name>
+      <config>
+        <name>1/mgmt0</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.1</name>
+      <config>
+        <name>2/1.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.1</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.2</name>
+      <config>
+        <name>2/1.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.2</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.3</name>
+      <config>
+        <name>2/1.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.3</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.4</name>
+      <config>
+        <name>2/1.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.4</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.5</name>
+      <config>
+        <name>2/1.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.5</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.6</name>
+      <config>
+        <name>2/1.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.6</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.7</name>
+      <config>
+        <name>2/1.7</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.7</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/1.8</name>
+      <config>
+        <name>2/1.8</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+          <aggregate-id xmlns="http://openconfig.net/yang/interfaces/aggregate">cplagg_1.8</aggregate-id>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/2.2</name>
+      <config>
+        <name>2/2.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/2.3</name>
+      <config>
+        <name>2/2.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/2.4</name>
+      <config>
+        <name>2/2.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/2.5</name>
+      <config>
+        <name>2/2.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/2.6</name>
+      <config>
+        <name>2/2.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.1</name>
+      <config>
+        <name>2/3.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.2</name>
+      <config>
+        <name>2/3.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.3</name>
+      <config>
+        <name>2/3.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.4</name>
+      <config>
+        <name>2/3.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.5</name>
+      <config>
+        <name>2/3.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.6</name>
+      <config>
+        <name>2/3.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.7</name>
+      <config>
+        <name>2/3.7</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/3.8</name>
+      <config>
+        <name>2/3.8</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/4.1</name>
+      <config>
+        <name>2/4.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>2/mgmt0</name>
+      <config>
+        <name>2/mgmt0</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+      </config>
+      <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+        <config>
+          <auto-negotiate>true</auto-negotiate>
+          <duplex-mode>FULL</duplex-mode>
+        </config>
+      </ethernet>
+    </interface>
+    <interface>
+      <name>cplagg_1.1</name>
+      <config>
+        <name>cplagg_1.1</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.2</name>
+      <config>
+        <name>cplagg_1.2</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.3</name>
+      <config>
+        <name>cplagg_1.3</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.4</name>
+      <config>
+        <name>cplagg_1.4</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.5</name>
+      <config>
+        <name>cplagg_1.5</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.6</name>
+      <config>
+        <name>cplagg_1.6</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.7</name>
+      <config>
+        <name>cplagg_1.7</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+    <interface>
+      <name>cplagg_1.8</name>
+      <config>
+        <name>cplagg_1.8</name>
+        <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ieee8023adLag</type>
+      </config>
+      <aggregation xmlns="http://openconfig.net/yang/interfaces/aggregate">
+        <config>
+          <lag-type>LACP</lag-type>
+          <min-links>1</min-links>
+        </config>
+      </aggregation>
+    </interface>
+  </interfaces>
+  <lacp xmlns="http://openconfig.net/yang/lacp">
+    <interfaces>
+      <interface>
+        <name>cplagg_1.1</name>
+        <config>
+          <name>cplagg_1.1</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.2</name>
+        <config>
+          <name>cplagg_1.2</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.3</name>
+        <config>
+          <name>cplagg_1.3</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.4</name>
+        <config>
+          <name>cplagg_1.4</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.5</name>
+        <config>
+          <name>cplagg_1.5</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.6</name>
+        <config>
+          <name>cplagg_1.6</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.7</name>
+        <config>
+          <name>cplagg_1.7</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+      <interface>
+        <name>cplagg_1.8</name>
+        <config>
+          <name>cplagg_1.8</name>
+          <interval>FAST</interval>
+        </config>
+      </interface>
+    </interfaces>
+  </lacp>
+  <system xmlns="http://openconfig.net/yang/system">
+    <dns>
+      <servers>
+        <server>
+          <address>10.154.1.241</address>
+          <config>
+            <address>10.154.1.241</address>
+          </config>
+        </server>
+      </servers>
+    </dns>
+    <ntp>
+      <config>
+        <enabled>true</enabled>
+        <enable-ntp-auth>false</enable-ntp-auth>
+      </config>
+      <servers>
+        <server>
+          <address>pool.ntp.org</address>
+          <config>
+            <address>pool.ntp.org</address>
+          </config>
+        </server>
+      </servers>
+    </ntp>
+    <logging>
+      <sw-components xmlns="http://f5.com/yang/system/logging">
+        <sw-component>
+          <name>alert-service</name>
+          <config>
+            <name>alert-service</name>
+            <description>Alert service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>audit-service</name>
+          <config>
+            <name>audit-service</name>
+            <description>Audit message handling service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>authd</name>
+          <config>
+            <name>authd</name>
+            <description>Authentication configuration</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>chassis-bladesd</name>
+          <config>
+            <name>chassis-bladesd</name>
+            <description>Unassigned Blade Enumerator</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>confd-key-migrationd</name>
+          <config>
+            <name>confd-key-migrationd</name>
+            <description>Confd Primary Key Migration Service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>config-object-manager</name>
+          <config>
+            <name>config-object-manager</name>
+            <description>Configuration object manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>diag-agent</name>
+          <config>
+            <name>diag-agent</name>
+            <description>Diag agent</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>diag-data</name>
+          <config>
+            <name>diag-data</name>
+            <description>Static diagnostic data collector</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>fips-service</name>
+          <config>
+            <name>fips-service</name>
+            <description>FIPS service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>firewall-manager</name>
+          <config>
+            <name>firewall-manager</name>
+            <description>Firewall Manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>ihealth-upload-service</name>
+          <config>
+            <name>ihealth-upload-service</name>
+            <description>Upload diagnostics data service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>ihealthd</name>
+          <config>
+            <name>ihealthd</name>
+            <description>Communication proxy for ihealth-upload-service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>license-service</name>
+          <config>
+            <name>license-service</name>
+            <description>License service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>lopd</name>
+          <config>
+            <name>lopd</name>
+            <description>Communication proxy for the Lights Out Processor</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>orchestration-manager</name>
+          <config>
+            <name>orchestration-manager</name>
+            <description>Orchestration manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>partition-software-manager</name>
+          <config>
+            <name>partition-software-manager</name>
+            <description>Partition software manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-diag</name>
+          <config>
+            <name>platform-diag</name>
+            <description>Platform diag service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-fwu</name>
+          <config>
+            <name>platform-fwu</name>
+            <description>Platform firmware upgrade</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-hal</name>
+          <config>
+            <name>platform-hal</name>
+            <description>Platform hardware abstraction layer</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-monitor</name>
+          <config>
+            <name>platform-monitor</name>
+            <description>Platform monitor</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-stats</name>
+          <config>
+            <name>platform-stats</name>
+            <description>Collects platform statistics like cpu and memory utilization</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>platform-stats-bridge-cc</name>
+          <config>
+            <name>platform-stats-bridge-cc</name>
+            <description>Platform stats bridge</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>qkviewd</name>
+          <config>
+            <name>qkviewd</name>
+            <description>Diagnostic information</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>rsyslog-configd</name>
+          <config>
+            <name>rsyslog-configd</name>
+            <description>Logging configuration</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>snmp-service</name>
+          <config>
+            <name>snmp-service</name>
+            <description>SNMP service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>snmp-trapd</name>
+          <config>
+            <name>snmp-trapd</name>
+            <description>SNMP trap</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>sshd-crypto</name>
+          <config>
+            <name>sshd-crypto</name>
+            <description>Enable Information logging for sshd-crypto</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>switchd</name>
+          <config>
+            <name>switchd</name>
+            <description>Switch daemon</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>system-service</name>
+          <config>
+            <name>system-service</name>
+            <description>System Configuration service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>terminal-server</name>
+          <config>
+            <name>terminal-server</name>
+            <description>Terminal server</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>upgrade-service</name>
+          <config>
+            <name>upgrade-service</name>
+            <description>Software upgrade service</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>user-manager</name>
+          <config>
+            <name>user-manager</name>
+            <description>User manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-chassis-manager</name>
+          <config>
+            <name>vcc-chassis-manager</name>
+            <description>Chassis manager</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-confd</name>
+          <config>
+            <name>vcc-confd</name>
+            <description>System controller ConfD</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-ha</name>
+          <config>
+            <name>vcc-ha</name>
+            <description>High availability</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-host-config</name>
+          <config>
+            <name>vcc-host-config</name>
+            <description>Host configuration</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-image-server</name>
+          <config>
+            <name>vcc-image-server</name>
+            <description>Image server</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-lacpd</name>
+          <config>
+            <name>vcc-lacpd</name>
+            <description>Link aggregation control protocol</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+        <sw-component>
+          <name>vcc-partition-agent</name>
+          <config>
+            <name>vcc-partition-agent</name>
+            <description>Partition agent</description>
+            <severity>INFORMATIONAL</severity>
+          </config>
+        </sw-component>
+      </sw-components>
+    </logging>
+    <aaa>
+      <authentication>
+        <config>
+          <authentication-method xmlns:oc-aaa-types="http://openconfig.net/yang/aaa/types">oc-aaa-types:LOCAL</authentication-method>
+          <authentication-method xmlns:f5-aaa-ldap="http://f5.com/yang/openconfig-aaa-ldap">f5-aaa-ldap:LDAP_ALL</authentication-method>
+        </config>
+        <users xmlns="http://f5.com/yang/system-aaa">
+          <user>
+            <username>admin</username>
+            <config>
+              <username>admin</username>
+              <password>$6$EeAyyEPo$Tv9YqqlJFV.Yy4k19QrNND6iQPhIa/UnLXxe.jFv1/YtfJJ./rUeDUnpIZx9f1YWIEwsJseFeQxl2R63aq5kl1</password>
+              <last-change>20350</last-change>
+              <expiry-date>-1</expiry-date>
+              <role>admin</role>
+              <expiry-status>enabled</expiry-status>
+            </config>
+          </user>
+          <user>
+            <username>root</username>
+            <config>
+              <username>root</username>
+              <password>$6$omMPKqcR$mDOTgoZbyxkda6J.vyBPEgqhLS3DGoXeBL7xX2f4BbVtp.hVz9p0HqNNiv/xB1sibyG/Z.hwY5w4pPFqLa0pv1</password>
+              <last-change>20350</last-change>
+              <expiry-date>-1</expiry-date>
+              <role>root</role>
+              <expiry-status>enabled</expiry-status>
+            </config>
+          </user>
+        </users>
+        <roles xmlns="http://f5.com/yang/system-aaa">
+          <role>
+            <rolename>admin</rolename>
+            <config>
+              <rolename>admin</rolename>
+              <gid>9000</gid>
+              <remote-gid>9000</remote-gid>
+              <description>Unrestricted read/write access.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>operator</rolename>
+            <config>
+              <rolename>operator</rolename>
+              <gid>9001</gid>
+              <ldap-group>dc=my-domain,dc=com</ldap-group>
+              <description>Read-only access to system level data.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_1</rolename>
+            <config>
+              <rolename>partition_1</rolename>
+              <gid>9101</gid>
+              <description>Provides console access for partition-1.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_2</rolename>
+            <config>
+              <rolename>partition_2</rolename>
+              <gid>9102</gid>
+              <description>Provides console access for partition-2.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_3</rolename>
+            <config>
+              <rolename>partition_3</rolename>
+              <gid>9103</gid>
+              <description>Provides console access for partition-3.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_4</rolename>
+            <config>
+              <rolename>partition_4</rolename>
+              <gid>9104</gid>
+              <description>Provides console access for partition-4.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_5</rolename>
+            <config>
+              <rolename>partition_5</rolename>
+              <gid>9105</gid>
+              <description>Provides console access for partition-5.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_6</rolename>
+            <config>
+              <rolename>partition_6</rolename>
+              <gid>9106</gid>
+              <description>Provides console access for partition-6.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_7</rolename>
+            <config>
+              <rolename>partition_7</rolename>
+              <gid>9107</gid>
+              <description>Provides console access for partition-7.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>partition_8</rolename>
+            <config>
+              <rolename>partition_8</rolename>
+              <gid>9108</gid>
+              <description>Provides console access for partition-8.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>resource-admin</rolename>
+            <config>
+              <rolename>resource-admin</rolename>
+              <gid>9003</gid>
+              <description>Restricted read/write access. No access to modify authentication configuration.</description>
+            </config>
+          </role>
+          <role>
+            <rolename>superuser</rolename>
+            <config>
+              <rolename>superuser</rolename>
+              <gid>9004</gid>
+              <description>Sudo privileges and Bash access to the system (if enabled).</description>
+            </config>
+          </role>
+          <role>
+            <rolename>ts_admin</rolename>
+            <config>
+              <rolename>ts_admin</rolename>
+              <gid>9100</gid>
+              <description>Provides admin access to the terminal server (TS).</description>
+            </config>
+          </role>
+          <role>
+            <rolename>user</rolename>
+            <config>
+              <rolename>user</rolename>
+              <gid>9002</gid>
+              <description>Read-only access to non-sensitive system level data.</description>
+            </config>
+          </role>
+        </roles>
+      </authentication>
+      <server-groups>
+        <server-group>
+          <name>mygroup1</name>
+          <config>
+            <name>mygroup1</name>
+            <type xmlns:oc-aaa="http://openconfig.net/yang/aaa">oc-aaa:TACACS</type>
+          </config>
+        </server-group>
+        <server-group>
+          <name>test_ldap</name>
+          <config>
+            <name>test_ldap</name>
+            <type xmlns:f5-aaa-ldap="http://f5.com/yang/openconfig-aaa-ldap">f5-aaa-ldap:LDAP</type>
+          </config>
+          <servers>
+            <server>
+              <address>172.18.104.139</address>
+              <config>
+                <address>172.18.104.139</address>
+              </config>
+              <ldap xmlns="http://f5.com/yang/openconfig-aaa-ldap">
+                <config>
+                  <auth-port>1389</auth-port>
+                  <type>ldap</type>
+                </config>
+              </ldap>
+            </server>
+          </servers>
+        </server-group>
+      </server-groups>
+      <password-policy xmlns="http://f5.com/yang/openconfig-aaa-password-policy">
+        <config>
+          <min-length>6</min-length>
+          <required-numeric>0</required-numeric>
+          <required-uppercase>0</required-uppercase>
+          <required-lowercase>0</required-lowercase>
+          <required-special>0</required-special>
+          <max-letter-repeat>3</max-letter-repeat>
+          <max-sequence-repeat>0</max-sequence-repeat>
+          <max-class-repeat>0</max-class-repeat>
+          <required-differences>0</required-differences>
+          <reject-username>false</reject-username>
+          <apply-to-root>false</apply-to-root>
+          <retries>3</retries>
+          <max-login-failures>10</max-login-failures>
+          <unlock-time>60</unlock-time>
+          <root-lockout>true</root-lockout>
+          <root-unlock-time>60</root-unlock-time>
+          <max-age>0</max-age>
+        </config>
+      </password-policy>
+    </aaa>
+    <redundancy xmlns="http://f5.com/ns/system/redundancy">
+      <config>
+        <mode>auto</mode>
+      </config>
+      <nodes>
+        <node>
+          <name>controller-1</name>
+          <config>
+            <name>controller-1</name>
+          </config>
+        </node>
+        <node>
+          <name>controller-2</name>
+          <config>
+            <name>controller-2</name>
+          </config>
+        </node>
+      </nodes>
+    </redundancy>
+    <allowed-ips xmlns="http://f5.com/yang/allowed-ips">
+      <allowed-ip>
+        <name>allow-snmp</name>
+        <config>
+          <ipv4>
+            <address>10.0.0.221</address>
+            <prefix-length>32</prefix-length>
+            <port>161</port>
+          </ipv4>
+        </config>
+      </allowed-ip>
+      <allowed-ip>
+        <name>allow-snmp2</name>
+        <config>
+          <ipv4>
+            <address>172.18.0.0</address>
+            <prefix-length>16</prefix-length>
+            <port>161</port>
+          </ipv4>
+        </config>
+      </allowed-ip>
+    </allowed-ips>
+    <database xmlns="http://f5.com/yang/database">
+      <config>
+        <services-type>F5OS-C CX410</services-type>
+      </config>
+    </database>
+    <mgmt-ip xmlns="http://f5.com/yang/mgmt-ip">
+      <config>
+        <dhcp-enabled>false</dhcp-enabled>
+        <ipv4>
+          <controller-1>
+            <address>192.0.2.35</address>
+          </controller-1>
+          <controller-2>
+            <address>192.0.2.37</address>
+          </controller-2>
+          <floating>
+            <address>192.0.2.36</address>
+          </floating>
+          <prefix-length>24</prefix-length>
+          <gateway>192.0.2.254</gateway>
+        </ipv4>
+      </config>
+    </mgmt-ip>
+    <appliance-mode xmlns="http://f5.com/yang/security-appliance-mode">
+      <config>
+        <enabled>false</enabled>
+      </config>
+    </appliance-mode>
+    <diagnostics xmlns="http://f5.com/yang/system-diagnostics-qkview">
+      <telemetry xmlns="http://f5.com/yang/system/diagnostics/telemetry">
+        <config>
+          <key>$8$fuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkeyfuzzedkey==</key>
+          <passphrase>$8$VhwTAAbBiyP9gAcHk2tzYhBXkK469RSLD/Ka2zMCrejEoeQIFf+qNuzdEHO0I77J48bNMwhe
+whH+5Qkr3VeCM2OissgwET1WqG/fi185ABatYCanBuBDL8x3GuDUFjCi</passphrase>
+        </config>
+      </telemetry>
+    </diagnostics>
+    <security xmlns="http://f5.com/yang/system-security-ciphers">
+      <services>
+        <service>
+          <name>httpd</name>
+          <config>
+            <name>httpd</name>
+            <ssl-ciphersuite>ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-DSS-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA256:DHE-RSA-AES256-SHA:DHE-DSS-AES256-SHA:DHE-RSA-CAMELLIA256-SHA:DHE-DSS-CAMELLIA256-SHA:ECDH-RSA-AES256-GCM-SHA384:ECDH-ECDSA-AES256-GCM-SHA384:ECDH-RSA-AES256-SHA384:ECDH-ECDSA-AES256-SHA384:ECDH-RSA-AES256-SHA:ECDH-ECDSA-AES256-SHA:AES256-GCM-SHA384:AES256-SHA256:AES256-SHA:CAMELLIA256-SHA:PSK-AES256-CBC-SHA:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:DHE-DSS-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-SHA256:DHE-DSS-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA:DHE-RSA-CAMELLIA128-SHA:DHE-DSS-CAMELLIA128-SHA:ECDH-RSA-AES128-GCM-SHA256:ECDH-ECDSA-AES128-GCM-SHA256:ECDH-RSA-AES128-SHA256:ECDH-ECDSA-AES128-SHA256:ECDH-RSA-AES128-SHA:ECDH-ECDSA-AES128-SHA:AES128-GCM-SHA256:AES128-SHA256:AES128-SHA:CAMELLIA128-SHA:PSK-AES128-CBC-SHA</ssl-ciphersuite>
+          </config>
+        </service>
+        <service>
+          <name>sshd</name>
+          <config>
+            <name>sshd</name>
+            <ciphers>aes128-cbc</ciphers>
+            <ciphers>aes128-ctr</ciphers>
+            <ciphers>aes128-gcm@openssh.com</ciphers>
+            <ciphers>aes256-cbc</ciphers>
+            <ciphers>aes256-ctr</ciphers>
+            <ciphers>aes256-gcm@openssh.com</ciphers>
+            <macs>hmac-md5</macs>
+            <macs>hmac-md5-96</macs>
+            <macs>hmac-md5-96-etm@openssh.com</macs>
+            <macs>hmac-md5-etm@openssh.com</macs>
+            <macs>hmac-ripemd160</macs>
+            <macs>hmac-ripemd160-etm@openssh.com</macs>
+            <macs>hmac-ripemd160@openssh.com</macs>
+            <macs>hmac-sha1</macs>
+            <macs>hmac-sha1-96</macs>
+            <macs>hmac-sha1-96-etm@openssh.com</macs>
+            <macs>hmac-sha1-etm@openssh.com</macs>
+            <macs>hmac-sha2-256</macs>
+            <macs>hmac-sha2-256-etm@openssh.com</macs>
+            <macs>hmac-sha2-512</macs>
+            <macs>hmac-sha2-512-etm@openssh.com</macs>
+            <macs>umac-128-etm@openssh.com</macs>
+            <macs>umac-128@openssh.com</macs>
+            <macs>umac-64-etm@openssh.com</macs>
+            <macs>umac-64@openssh.com</macs>
+            <kexalgorithms>diffie-hellman-group14-sha1</kexalgorithms>
+            <kexalgorithms>diffie-hellman-group14-sha256</kexalgorithms>
+            <kexalgorithms>diffie-hellman-group16-sha512</kexalgorithms>
+            <kexalgorithms>ecdh-sha2-nistp256</kexalgorithms>
+            <kexalgorithms>ecdh-sha2-nistp384</kexalgorithms>
+            <kexalgorithms>ecdh-sha2-nistp521</kexalgorithms>
+          </config>
+        </service>
+      </services>
+    </security>
+    <snmp xmlns="http://f5.com/yang/system-snmp">
+      <users>
+        <user>
+          <name>ganti</name>
+          <config>
+            <name>ganti</name>
+            <authentication-protocol>md5</authentication-protocol>
+            <privacy-protocol>none</privacy-protocol>
+          </config>
+        </user>
+      </users>
+      <engine-id>
+        <config>
+          <value>mac</value>
+        </config>
+      </engine-id>
+    </snmp>
+    <rollback xmlns="http://f5.com/yang/system/rollback">
+      <config>
+        <os-version>1.8.1-26929</os-version>
+        <service-version>1.8.1-26929</service-version>
+        <creation-time>2026-02-02 21:03:12+00:00</creation-time>
+      </config>
+    </rollback>
+  </system>
+</config>

@@ -13,7 +13,7 @@ Instead, use GitHub's built-in private reporting:
 3. Fill out the form and submit.
 
 Or use this direct link:
-<https://github.com/<TEMPLATE-OWNER>/<TEMPLATE-REPO>/security/advisories/new>
+<https://github.com/SalesAmerSP/f5-velos-rancid/security/advisories/new>
 
 ### What to include in your report
 

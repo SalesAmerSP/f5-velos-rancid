@@ -1,0 +1,33 @@
+# RANCID Credentials configuration (.cloginrc) for F5 VELOS System
+# Copy this file to ~/.cloginrc and set permissions to 600 (chmod 600 ~/.cloginrc)
+#
+# IMPORTANT: RANCID requires that ~/.cloginrc is owned by the running user
+# and has strict permissions (read/write only by owner).
+
+# --- F5OS (System Controllers & Chassis Partitions) Login Details ---
+# Active System Controller (Floating Management IP)
+add user 192.0.2.36 {admin}
+add password 192.0.2.36 {<YOUR_F5OS_ADMIN_PASSWORD_HERE>}
+
+# Physical System Controller 1
+add user 192.0.2.35 {admin}
+add password 192.0.2.35 {<YOUR_F5OS_ADMIN_PASSWORD_HERE>}
+
+# Physical System Controller 2
+add user 192.0.2.37 {admin}
+add password 192.0.2.37 {<YOUR_F5OS_ADMIN_PASSWORD_HERE>}
+
+# Chassis Partition Management IP (Update with your specific Partition IP)
+add user 192.0.2.38 {admin}
+add password 192.0.2.38 {<YOUR_F5OS_ADMIN_PASSWORD_HERE>}
+
+# --- BIG-IP Tenant Login Details ---
+# Tenant IP Address (Update with your specific BIG-IP Tenant Management IP)
+add user 192.0.2.39 {admin}
+add password 192.0.2.39 {<YOUR_F5OS_ADMIN_PASSWORD_HERE>}
+
+# --- Connection Parameters ---
+add method * {ssh}
+add cyphertype * {aes256-ctr,aes128-ctr}
+add autoenable * 1
+add connection-timeout * 30
