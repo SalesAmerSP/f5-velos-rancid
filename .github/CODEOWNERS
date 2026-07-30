@@ -1,0 +1,18 @@
+# CODEOWNERS — used by GitHub to auto-request reviews on PRs.
+#
+# Each line is a file pattern followed by one or more owners (GitHub
+# usernames or team names). The last matching pattern wins.
+#
+# https://docs.github.com/en/repositories/managing-your-repositories-settings-and-customizations/customizing-your-repository/about-code-owners
+#
+# Replace <TEMPLATE-OWNER> with your GitHub username or team and uncomment.
+# For a single-maintainer repo this is mostly informational; for a multi-
+# maintainer repo it ensures the right people are pinged on PRs.
+
+# Default owner for everything in the repo
+# *  @<TEMPLATE-OWNER>
+
+# Security-sensitive files require maintainer review
+# /SECURITY.md             @<TEMPLATE-OWNER>
+# /.github/workflows/      @<TEMPLATE-OWNER>
+# /.github/dependabot.yml  @<TEMPLATE-OWNER>

@@ -1,0 +1,164 @@
+version: 2
+updates:
+  # GitHub Actions used by workflows in this repo. Always enabled.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - dependencies
+      - github-actions
+
+  # ----------------------------------------------------------------------
+  # Per-language ecosystems. Uncomment the blocks for languages your
+  # project actually uses, and set `directory` to the path that contains
+  # the manifest file (e.g. `/` for repo-root manifests, `/python` for a
+  # subdirectory).
+  # ----------------------------------------------------------------------
+
+  # Python (requirements.txt, requirements.in, pyproject.toml, Pipfile)
+  # - package-ecosystem: pip
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - python
+
+  # Node.js (package.json, package-lock.json, yarn.lock, pnpm-lock.yaml)
+  # - package-ecosystem: npm
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - npm
+
+  # Go (go.mod)
+  # - package-ecosystem: gomod
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - go
+
+  # Rust (Cargo.toml, Cargo.lock)
+  # - package-ecosystem: cargo
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - rust
+
+  # Ruby (Gemfile, Gemfile.lock)
+  # - package-ecosystem: bundler
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - ruby
+
+  # Java / Maven (pom.xml)
+  # - package-ecosystem: maven
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - java
+
+  # Java / Gradle (build.gradle, build.gradle.kts)
+  # - package-ecosystem: gradle
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - java
+
+  # .NET (*.csproj, packages.config)
+  # - package-ecosystem: nuget
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - dotnet
+
+  # PHP (composer.json)
+  # - package-ecosystem: composer
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - php
+
+  # Terraform (*.tf with `required_providers` blocks)
+  # - package-ecosystem: terraform
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - terraform
+
+  # Docker (Dockerfile, docker-compose.yml)
+  # - package-ecosystem: docker
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   commit-message:
+  #     prefix: "deps"
+  #   labels:
+  #     - dependencies
+  #     - docker

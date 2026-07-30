@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/<TEMPLATE-OWNER>/<TEMPLATE-REPO>/security/advisories/new
+    about: Report a security vulnerability privately. Do not file a public issue.
+  - name: Question or discussion
+    url: https://github.com/<TEMPLATE-OWNER>/<TEMPLATE-REPO>/discussions
+    about: Ask questions, share ideas, or start a discussion. Enable Discussions in repo settings first.
