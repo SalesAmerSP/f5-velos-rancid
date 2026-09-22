@@ -1,5 +1,0 @@
-# .gitleaksignore
-# This file tells Gitleaks to ignore false-positives (such as RANCID template passwords)
-
-# Ignore our template credential script
-rancid_install/etc/cloginrc.velos

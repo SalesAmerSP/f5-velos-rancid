@@ -59,9 +59,9 @@ behind the scenes:
   our dependencies and opens pull requests to update them.
   See [.github/dependabot.yml](.github/dependabot.yml).
 
-- **Gitleaks (secret scanning)** -- Every push and pull request is
+- **TruffleHog (secret scanning)** -- Every push and pull request is
   scanned for accidentally committed passwords, API keys, or tokens.
-  See [.github/workflows/gitleaks.yml](.github/workflows/gitleaks.yml).
+  See [.github/workflows/trufflehog.yml](.github/workflows/trufflehog.yml).
 
 - **Branch protection** -- The `main` branch is protected against
   force-pushes and direct commits. All changes go through pull requests.
